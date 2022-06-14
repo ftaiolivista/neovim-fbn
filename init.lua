@@ -3,13 +3,8 @@ require('treesitter')
 require('snp')
 require('compl')
 require('lsp')
-vim.opt.termguicolors = true
-require("bufferline").setup{}
-vim.keymap.set('n', '<silent>[b', ':BufferLineCycleNext<CR>')
-vim.keymap.set('n', '<silent>b]', ':BufferLineCyclePrev<CR>')
-vim.o.mouse="a"
-require('nvim-tree').setup {}
-vim.keymap.set('n', '|', ':NvimTreeToggle<CR>')
+require('tabs')
+require('tree')
 -- nnoremap <silent>[b :BufferLineCycleNext<CR>
 -- nnoremap <silent>b] :BufferLineCyclePrev<CR>
 -- nnoremap <silent><mymap> :BufferLineMoveNext<CR>
